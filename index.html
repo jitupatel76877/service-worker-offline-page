@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>403 Forbidden</title>
+</head>
+<body>
+
+<p>Hi This is main page</p>
+
+
+<script>
+if ('serviceWorker' in navigator) {  
+    navigator.serviceWorker.register('./service-worker.js');
+    console.log("SUccess full register service worker");
+}else{  
+   console.warn('Service workers aren\'t supported in this browser.');  
+}  
+
+</script>
+
+</body>
+</html>
